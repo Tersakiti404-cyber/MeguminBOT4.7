@@ -63,27 +63,27 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:デ ニ ス\n'
-            + 'ORG:Owner Dns Bot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285866295942:+62 858-66295-942\n'
+            + 'FN:Fajar Alfarizi\n'
+            + 'ORG:Owner 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6281333782061:+62 813-3378-2061\n'
             + 'END:VCARD'
        
 const vcard1 = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Caca Cans\n'
-            + 'ORG:Co Owner Dns Bot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285876210829:+62 858-76210-829\n'
+            + 'FN:Debby Cans\n'
+            + 'ORG:Co Owner 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6285277188863:+62 852-7718-8863\n'
             + 'END:VCARD'
 
-prefix = "#"
-name = "DNS BOT"
-rdaftar = "@denssptraa"
-rmenu = "@denssptraa"
-botinfo = "@denssptraa"
+prefix = "!"
+name = "𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃"
+rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 😁"
+rmenu = "HAI TEMEN 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 👋🏻 JANGAN LUPA DONASI YAA:)"
+botinfo = "UNTUK INVITE BOT SILAHKAN DONASI DULU YAA:)"
 limitt = 999999999
-memberLimit = 10
+memberLimit = 2
 ban = []
-premium = ["6285866295942@s.whatsapp.net","6285876210829@s.whatsapp.net"]
+premium = ["6281333782061@s.whatsapp.net","6285277188863@s.whatsapp.net"]
 
 function kyun(seconds){
   function pad(s){
@@ -106,10 +106,10 @@ async function starts() {
 
 	fs.existsSync('./Fxc7.json') && denz.loadAuthInfo('./Fxc7.json')
 	denz.on('connecting', () => {
-		start('2', 'Connecting...')
+		start('2', 'Menyambungkan sayang ❤️...')
 	})
 	denz.on('open', () => {
-		success('2', 'Connected')
+		success('2', 'Tersambung Sayang ❤️')
 	})
 	await denz.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./Fxc7.json', JSON.stringify(denz.base64EncodedAuthInfo(), null, '\t'))
@@ -194,7 +194,7 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const DnsBot = ["6285866295942@s.whatsapp.net"] // ubah aja gapapa
+			const DnsBot = ["0@s.whatsapp.net"] // ubah aja gapapa
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
@@ -238,7 +238,7 @@ async function starts() {
 			}
 
 			const botNumber = denz.user.jid
-			const ownerNumber = ["6285866295942@s.whatsapp.net","6285876210829@s.whataapp.net"] // owner number ubah aja
+			const ownerNumber = ["6281333782061@s.whatsapp.net","6285277188863@s.whatsapp.net","6287894610286@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await denz.groupMetadata(from) : ''
@@ -307,7 +307,7 @@ async function starts() {
 				try {
 					const getmemex = groupMembers.length
 					    if (getmemex <= memberLimit) {
-					    denz.sendMessage(from, `ᴍᴀᴀғ ᴅɴꜱ ʙᴏᴛ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴀꜱᴜᴋ ɢʀᴏᴜᴘ ᴋᴀʀɴᴀ ᴍᴇᴍʙᴇʀ ɢʀᴏᴜᴘ *${groupMetadata.subject}* ᴛɪᴅᴀᴋ ᴍᴇᴍᴇɴᴜʜɪ ʟɪᴍɪᴛ ᴍᴇᴍʙᴇʀ\n\nᴍɪɴɪᴍᴀʟ ᴍᴇᴍʙᴇʀ *${memberLimit}*`, text)
+					    denz.sendMessage(from, `ᴍᴀᴀғ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴀꜱᴜᴋ ɢʀᴏᴜᴘ ᴋᴀʀɴᴀ ᴍᴇᴍʙᴇʀ ɢʀᴏᴜᴘ *${groupMetadata.subject}* ᴛɪᴅᴀᴋ ᴍᴇᴍᴇɴᴜʜɪ ʟɪᴍɪᴛ ᴍᴇᴍʙᴇʀ\n\nᴍɪɴɪᴍᴀʟ ᴍᴇᴍʙᴇʀ *${memberLimit}*`, text)
 					setTimeout( () => {
                             denz.groupLeave(from)
                             }, 100)
@@ -315,7 +315,7 @@ async function starts() {
 		denz.updatePresence(from, Presence.composing)
 					}, 10)
 		setTimeout( () => {
-		reply(`ᴍᴀᴀғ ᴅɴꜱ ʙᴏᴛ ꜱᴇɢᴇʀᴀ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴏᴜᴘ *${groupMetadata.subject}*`)
+		reply(`ᴍᴀᴀғ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 ꜱᴇɢᴇʀᴀ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴏᴜᴘ *${groupMetadata.subject}*`)
 		}, 0)
 		}
 					
@@ -396,7 +396,7 @@ denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant
 				case 'menu':
 			if (isBanned) return reply(mess.only.benned)
 			if (!isUser) return reply(mess.only.userB)
-				dmenu = `╓───「 *_ᴅɴꜱ ʙᴏᴛ_* 」
+				dmenu = `╓───「 *_𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃_* 」
 ║wa.me/6285866295942
 ╙───々
 ╓───「 *_ʙᴏᴛ ɪɴғᴏ_* 」
@@ -410,7 +410,7 @@ denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant
 ║❏ ʟɪᴍɪᴛ: ${limitt}
 ║❏ ʀᴇɢɪꜱᴛᴇʀᴇᴅ: √
 ╙───々
-╓───「 *_ᴀʙᴏᴜᴛ ᴅɴꜱ ʙᴏᴛ_* 」
+╓───「 *_ᴀʙᴏᴜᴛ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃_* 」
 ║❏ ${prefix}ʀᴇᴘᴏʀᴛ
 ║❏ ${prefix}ɪɴғᴏ
 ║❏ ${prefix}ᴅᴏɴᴀꜱɪ
@@ -815,8 +815,8 @@ denz.sendMessage(from, hasil, text, {quoted: { key: { fromMe: false, participant
 ║❏ ${prefix}ᴄʟᴏɴᴇ
 ║❏ ${prefix}ʟᴇᴀᴠᴇ
 ╙───々
-╓───「 *_ᴅɴs ʙᴏᴛ_* 」
-║github.com/denisputraa/dnsbot
+╓───「 *_𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃_* 」
+║instagram.com/mhmdfjralfarizi_
 ╙───々`
 brando = await getBuffer(`https://pencarikode.xyz/api/cita-cita?apikey=pais`, {method: 'get'})                
 denz.sendMessage(from, dmenu, text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "kasian ga ada gambar :v anker-danendra-dennis #kamwan", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('dnsnew.jpg')}}}})
